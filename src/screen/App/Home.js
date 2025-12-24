@@ -2,9 +2,9 @@ import {
   FlatList,
   ImageBackground,
   Pressable,
-  StyleSheet,
-  View,
+  StyleSheet
 } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { RText } from "../../components";
 import App_Images from "../../theme";
 import { color } from "../../theme/color";
@@ -39,9 +39,10 @@ const Home = ({ navigation }) => {
     </Pressable>
   );
   return (
-    <View style={styles.container}>
+    <SafeAreaView edges={['top']}
+      backgroundColor={color.prime} style={styles.container}>
       <FlatList data={data} renderItem={render_RecipeList} showsVerticalScrollIndicator={false}/>
-    </View>
+    </SafeAreaView>
   );
 };
 const styles = StyleSheet.create({

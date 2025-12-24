@@ -46,7 +46,7 @@ const AppStack = () => {
         name="Home"
         component={Home}
         options={{
-          headerTitle: "Recipe Box",
+         headerShown : false,
           tabBarLabel: ({ focused }) => (
             <TabBarLabel focused={focused} title="Home" />
           ),
@@ -80,6 +80,7 @@ const AppStack = () => {
         name="Profile"
         component={Profile}
         options={{
+         headerShown : false,
           tabBarLabel: ({ focused }) => (
             <TabBarLabel focused={focused} title="Profile" />
           ),
