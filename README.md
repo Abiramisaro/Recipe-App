@@ -1,4 +1,4 @@
-# 📱 Project Name
+# 📱 Project Name - Reci
 A cross-platform mobile application built using **React Native** (Expo/CLI).  
 Currently in active development — more updates coming soon.
 
